@@ -22,7 +22,17 @@ function destructivelyRemoveFirstKitten(){
 }
 
 function appendKitten(name){
-  
+  var a = kittens.slice();
+  a.push(name);
+  return a;
 }
+
+function prependKitten(name){
+  var a = kittens.slice();
+  a.unshift(name);
+  return a;
+}
+
+
 
 
